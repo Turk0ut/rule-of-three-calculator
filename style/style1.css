@@ -1,19 +1,13 @@
-/*
- * TEMA METÁLICO ESCURO
- * Modificado para um visual escuro, prateado e brilhante.
-*/
-
 :root {
-    /* Paleta de cores metálicas */
-    --primary-color: #e0e0e0;         /* Prata brilhante para textos principais */
-    --background-color: #232526;      /* Fundo de carbono/aço escuro */
-    --container-gradient-start: #5a5a5a; /* Gradiente do container (início) */
-    --container-gradient-end: #3a3a3a;   /* Gradiente do container (fim) */
-    --text-color: #f0f0f0;            /* Cor do texto principal (branco suave) */
-    --text-color-secondary: #b0b0b0;   /* Cor para textos secundários */
-    --input-bg: #333;                 /* Fundo dos campos de input */
-    --input-border: #2a2a2a;           /* Borda dos campos de input */
-    --input-focus-glow: rgba(192, 192, 192, 0.7); /* Brilho prateado ao focar */
+    --primary-color: #e0e0e0;
+    --background-color: #232526;
+    --container-gradient-start: #5a5a5a;
+    --container-gradient-end: #3a3a3a;
+    --text-color: #f0f0f0;
+    --text-color-secondary: #b0b0b0;
+    --input-bg: #333;
+    --input-border: #2a2a2a;
+    --input-focus-glow: rgba(192, 192, 192, 0.7);
 }
 
 body {
@@ -32,8 +26,6 @@ body {
     background: linear-gradient(145deg, #565656, #161616b3);
     padding: 30px 40px;
     border-radius: 16px;
-    /* border: 1px solid #667; Borda para dar profundidade */
-    /* Sombra para efeito de profundidade e brilho sutil na borda superior */
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.1);
     text-align: center;
     max-width: 500px;
@@ -43,9 +35,6 @@ body {
 h1 {
     margin-top: 0;
     color: white;
-    /* color: var(--primary-color); */
-    /* Efeito de brilho/neon no título para destacar */
-    /* text-shadow: 0 0 10px rgba(192, 192, 192, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);*/
 }
 
 p {
@@ -101,7 +90,6 @@ input[type="text"] {
     color: var(--text-color);
     transition: all 0.3s ease;
     box-sizing: border-box;
-    /* Sombra interna para dar a sensação de que o campo está afundado */
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -111,7 +99,6 @@ input[type="number"]:focus {
     box-shadow: 0 0 8px var(--input-focus-glow);
 }
 
-/* Remove as setas de incremento/decremento do input number */
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
@@ -123,11 +110,11 @@ input[type=number] {
 }
 
 input#resultado {
-    background: transparent; /* Fundo transparente para destacar a borda */
+    background: transparent;
     font-weight: 500;
     color: var(--primary-color);
     border: 2px dashed #888;
-    box-shadow: none; /* Remove a sombra interna do resultado */
+    box-shadow: none;
 }
 
 .label {

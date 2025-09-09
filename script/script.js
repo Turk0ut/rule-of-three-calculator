@@ -39,35 +39,35 @@ inputA.addEventListener('input', calcularRegraDeTres);
 inputB.addEventListener('input', calcularRegraDeTres);
 inputC.addEventListener('input', calcularRegraDeTres);
 
-// 5. Função para carregar dados salvos quando a página é aberta
-function carregarDadosSalvos() {
-    // Pega os valores do localStorage
-    const aSalvo = localStorage.getItem('valorA_salvo');
-    const bSalvo = localStorage.getItem('valorB_salvo');
-    const cSalvo = localStorage.getItem('valorC_salvo');
+// // 5. Função para carregar dados salvos quando a página é aberta
+// function carregarDadosSalvos() {
+//     // Pega os valores do localStorage
+//     const aSalvo = localStorage.getItem('valorA_salvo');
+//     const bSalvo = localStorage.getItem('valorB_salvo');
+//     const cSalvo = localStorage.getItem('valorC_salvo');
 
-    // Se existirem valores, preenche os campos com eles
-    if (aSalvo) inputA.value = aSalvo;
-    if (bSalvo) inputB.value = bSalvo;
-    if (cSalvo) inputC.value = cSalvo;
+//     // Se existirem valores, preenche os campos com eles
+//     if (aSalvo) inputA.value = aSalvo;
+//     if (bSalvo) inputB.value = bSalvo;
+//     if (cSalvo) inputC.value = cSalvo;
 
-    // Se todos os valores salvos existirem, faz o cálculo inicial
-    if (aSalvo && bSalvo && cSalvo) {
-        calcularRegraDeTres();
-    }
-}
+//     // Se todos os valores salvos existirem, faz o cálculo inicial
+//     if (aSalvo && bSalvo && cSalvo) {
+//         calcularRegraDeTres();
+//     }
+// }
 
-// 6. Adiciona um "ouvinte" para salvar os dados no localStorage sempre que o usuário digita
-function salvarDados() {
-    localStorage.setItem('valorA_salvo', inputA.value);
-    localStorage.setItem('valorB_salvo', inputB.value);
-    localStorage.setItem('valorC_salvo', inputC.value);
-}
+// // 6. Adiciona um "ouvinte" para salvar os dados no localStorage sempre que o usuário digita
+// function salvarDados() {
+//     localStorage.setItem('valorA_salvo', inputA.value);
+//     localStorage.setItem('valorB_salvo', inputB.value);
+//     localStorage.setItem('valorC_salvo', inputC.value);
+// }
 
-inputA.addEventListener('input', salvarDados);
-inputB.addEventListener('input', salvarDados);
-inputC.addEventListener('input', salvarDados);
+// inputA.addEventListener('input', salvarDados);
+// inputB.addEventListener('input', salvarDados);
+// inputC.addEventListener('input', salvarDados);
 
 
-// 7. Chama a função para carregar os dados assim que a página terminar de carregar
-document.addEventListener('DOMContentLoaded', carregarDadosSalvos);
+// // 7. Chama a função para carregar os dados assim que a página terminar de carregar
+// document.addEventListener('DOMContentLoaded', carregarDadosSalvos);

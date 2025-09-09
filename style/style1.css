@@ -21,10 +21,11 @@ body {
     background: var(--background-color);
     color: var(--text-color);
     margin: 0;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 65vh;
 }
 
 .container {
